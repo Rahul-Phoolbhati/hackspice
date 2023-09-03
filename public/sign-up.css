@@ -1,0 +1,85 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'popins','sans-serif';
+    box-sizing:border-box ;
+}
+.container
+{
+    width: 100%;
+    height: 100vh;
+    background-position:centre;
+    background-size:cover;
+    position: relative;
+
+}
+body{
+    background-color: #1F6E8C;
+}
+.form-box {
+  width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background:rgb(121, 144, 140);
+    padding: 50px 60px 70px;
+    text-align: center;
+}
+ .form-box h1{
+     font-size:50px;
+    color:#0E2954;
+     font-weight: bold;
+     margin-bottom: 50px;
+     position: relative;
+}
+.input-field 
+{ margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+
+}
+.input{
+    width: 100%;
+    border: 0;
+    background: transparent;
+    outline: 0;
+    padding: 18px 15px;
+}
+p{
+    text-align:center ;
+    padding: 5px;
+    font-size: small;
+}
+.button
+{ display:flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+.button a {
+    width: 100%;
+    height: 100%;
+    padding: 12px 35px 12px 35px;
+}
+.button button{
+    flex-basis: 48%;
+    background-color:#0E2954;
+    height: 40px;
+    border-radius: 30px;
+    border: black;
+    outline: black;
+    cursor: pointer;
+    transition: 1s;
+    text-decoration-color:black ;
+}
+.button button.disable {
+    background: #F6F4EB;
+    color: darkgrey;
+
+}
