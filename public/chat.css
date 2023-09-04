@@ -99,10 +99,12 @@ body{
     height: 50px;
     display: flex;
 }
+
 .chat-screen .typebox input{
     flex: 1;
     height: 50px;
-    font-size: 10px;
+    font-size: 1.1rem;
+    border-radius: 6px;
 }
 .chat-screen .typebox button{
     width: 80px;
@@ -112,5 +114,6 @@ body{
     font-size: 16px;
     outline: none;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
 }

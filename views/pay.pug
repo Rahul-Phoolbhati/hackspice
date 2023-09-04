@@ -1,21 +1,23 @@
 html(lang="en")
   head
     title Razorpay User-to-User Payment
+    link(rel="stylesheet" href="/pay.css")
   body
-    h1 Razorpay User-to-User Payment
+    div.container
+      h1 Razorpay User-to-User Payment
 
-    div#profile
-      h2 User's Profile
-      p Name: #{recipientInfo.name}
-      p Mobile number: #{recipientInfo.mobileNumber}
-      
+      div#profile
+        h2 User's Profile
+        p Name: #{recipientInfo.name}
+          p Mobile number: #{recipientInfo.mobileNumber}
 
-      div#amountInput
-        label(for="amount") Enter Amount :  
-        input(type="number" id="amount" placeholder="Enter amount")
-        button#payButton Pay
 
-      div#paymentLink
+        div#amountInput
+          label(for="amount") Enter Amount :  
+            input(type="number" id="amount" placeholder="Enter amount")
+            button#payButton Pay
+
+        div#paymentLink
 
     //- Define a global JavaScript variable to hold recipientInfo
     script.
